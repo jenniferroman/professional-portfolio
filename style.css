@@ -6,6 +6,7 @@
 *   4.0 - About Me
 *   5.0 - Work
 *   6.0 - Contact Me
+*   7.0 - Footer
 */
 
 /*** 1.0 - Body ***/
@@ -101,10 +102,39 @@ main {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.section-title{
+/*** 4.0 - About Me ***/
+
+.about-me-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 160px;
+    width: 200px;
+    text-align: right;
+}
+
+#avatar {
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+#bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 125px;
+}
+
+/*** 5.0 - Work ***/
+
+.work-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,61 +144,58 @@ main {
     text-align: right;
 }
 
-/*** 4.0 - About Me ***/
-#bio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: justify;
-    padding-left: 30px;
-    padding-right: 50px;
-}
-
-#avatar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
-}
-
-/*** 5.0 - Work ***/
-
 .box-work {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: flexbox;
+    padding-left: 50px;
+    height: auto;
+    margin: auto;
+    max-width: 90%;
 }
 
-#first-project {
-    display: block;
-    max-width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 10px solid #008B8B;
+.first-project {
+    max-width: 92%;
+    border: 5px solid #ffcece;
 }
 
 .projects {
-    flex: 4;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 45%;
+    height: auto;
+    margin: auto;
+    border: 5px solid #ffcece;
 }
 
 /*** 6.0 - Contact Me ***/
 
-.contact-list{
-    display: inline-flex;
-    font-size: 32px;
-    padding: 25px 150px;
+.contact-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 118px;
+    width: 200px;
+    text-align: right;
 }
 
-/*** 7.0 - Contact Me ***/
+.contact-box{
+    padding-bottom: 100px;
+}
+
+.contact-list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 180px;
+    width: 60%;
+}
+
+.contact-item{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+}
+
+/*** 7.0 - Footer ***/
+
 .footer{
     padding: 30px;
     justify-content: center;
